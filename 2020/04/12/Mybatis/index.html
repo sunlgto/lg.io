@@ -5,13 +5,17 @@
   
 
   
-  <title>Hexo</title>
+  <title>Mybatis | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="Mybatis1.什么是mybatis MyBatis 是一款优秀的持久层框架， 它支持定制化 SQL、存储过程以及高级映射。 MyBatis 避免了几乎所有的 JDBC 代码和手动设置参数以及获取结果集。 MyBatis 可以使用简单的 XML 或注解来配置和映射原生类型、接口和 Java 的 POJO（Plain Old Java Objects，普通老式 Java 对象）为数据库中的记录。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mybatis">
+<meta property="og:url" content="http://yoursite.com/2020/04/12/Mybatis/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Mybatis1.什么是mybatis MyBatis 是一款优秀的持久层框架， 它支持定制化 SQL、存储过程以及高级映射。 MyBatis 避免了几乎所有的 JDBC 代码和手动设置参数以及获取结果集。 MyBatis 可以使用简单的 XML 或注解来配置和映射原生类型、接口和 Java 的 POJO（Plain Old Java Objects，普通老式 Java 对象）为数据库中的记录。">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-04-12T13:42:52.749Z">
+<meta property="article:modified_time" content="2020-04-12T13:40:28.040Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -62,9 +66,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-Mybatis" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-Mybatis" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/04/12/Mybatis/" class="article-date">
   <time datetime="2020-04-12T13:42:52.749Z" itemprop="datePublished">2020-04-12</time>
@@ -77,8 +79,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/12/Mybatis/">Mybatis</a>
+    <h1 class="article-title" itemprop="name">
+      Mybatis
     </h1>
   
 
@@ -166,315 +168,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-注解 Annotation-反射 Reflection" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/04/12/%E6%B3%A8%E8%A7%A3%20Annotation-%E5%8F%8D%E5%B0%84%20Reflection/" class="article-date">
-  <time datetime="2020-04-12T11:03:27.609Z" itemprop="datePublished">2020-04-12</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/12/%E6%B3%A8%E8%A7%A3%20Annotation-%E5%8F%8D%E5%B0%84%20Reflection/">注解 Annotation-反射 Reflection</a>
-    </h1>
+    <a href="/2020/04/12/%E6%B3%A8%E8%A7%A3%20Annotation-%E5%8F%8D%E5%B0%84%20Reflection/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">注解 Annotation-反射 Reflection</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="注解-Annotation-反射-Reflection"><a href="#注解-Annotation-反射-Reflection" class="headerlink" title="注解 Annotation/反射 Reflection"></a>注解 Annotation/反射 Reflection</h1><h3 id="什么是注解"><a href="#什么是注解" class="headerlink" title="什么是注解"></a>什么是注解</h3><ul>
-<li>Annotation是从JDK5.0开始引入的新技术。</li>
-<li>Annotation的作用<ul>
-<li>不是程序本身，可以对程序作出解释（这一点喝注释（comment）没什么区别）</li>
-<li>可以被其他程序读取</li>
-</ul>
-</li>
-<li>Annotation 的格式<ul>
-<li>注解yi@注释名在代码中存在，还可以添加一些参数值</li>
-</ul>
-</li>
-<li>Annotation可以在哪里shyong<ul>
-<li>可以附加在package,class,method,field上面，相当于给他们添加啦额外的辅助信息</li>
-<li>可以通过反射机制编程实现对这些元数据的访问</li>
-</ul>
-</li>
-</ul>
-<h2 id="Java反射机制"><a href="#Java反射机制" class="headerlink" title="Java反射机制"></a>Java反射机制</h2><ul>
-<li>Reflection (反射)是Java被视为动态语言的关键，反射机制允许程序在执行期借助与ReflectionAPI取得任何类的内部信息，并直接操作任意对象的内部属性及方法</li>
-<li>加载完类之后，在堆内存的方法区中就产生了一Class类型的对象（一个类只有一个Class对象)，这个对象就包含啦完整的类的结构，我们可以通过这个对象看到类的结构。</li>
-</ul>
-<p>正常方式：引入需要的‘包类’名称-&gt;通过new实例化-&gt;取得实例对象<br>反射方式：实例化对象-&gt;getClass()方法-&gt;得到完整的“包类”名称</p>
-<table>
-<thead>
-<tr>
-<th>Class方法名</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>static ClassForName(String name)</td>
-<td>返回指定类名name的Classduixiang</td>
-</tr>
-<tr>
-<td>Object  newInstance</td>
-<td>调用缺省构造函数，返回Class对象的一个实例</td>
-</tr>
-<tr>
-<td>getName()</td>
-<td>返回Class对象所表示的实体(类，接口，数组类，或void)的名称</td>
-</tr>
-<tr>
-<td>Class getSuperClass（）</td>
-<td>返回此Class对象的父类的Class对象</td>
-</tr>
-<tr>
-<td>class[]getinterfaces</td>
-<td>获取当前Class对象的接口</td>
-</tr>
-<tr>
-<td>ClassLoader getClassLoader（）</td>
-<td>返回该类的类加载器</td>
-</tr>
-<tr>
-<td>Constructor[] getConstructor()</td>
-<td>返回一个包含某些Constructor对象的数组  获取该类的构造方法</td>
-</tr>
-<tr>
-<td>Method getMothed(String name， class T)</td>
-<td>返回一个method对象，此对象的形参类型为 paramType返回该类中的所有的方法</td>
-</tr>
-<tr>
-<td>FieId[] getDeclaredFieIds（）</td>
-<td>返回 FieId对象的一个数组  获取类中的成员变量</td>
-</tr>
-<tr>
-<td>invoke（）</td>
-<td>执行一个方法</td>
-</tr>
-<tr>
-<td>代理</td>
-<td></td>
-</tr>
-</tbody></table>
-<h2 id="Java-内存分析"><a href="#Java-内存分析" class="headerlink" title="Java 内存分析"></a>Java 内存分析</h2><ol>
-<li><p>堆</p>
-<ul>
-<li>存放new对象和数组</li>
-<li>可以被所有的线程共享，不会存放别的引用对象</li>
-</ul>
-</li>
-<li><p>栈</p>
-<ul>
-<li>存放基本变量类型(会包含这个基本数据类型的具体数值)</li>
-<li>引用对象的变量(会存放这个引用在堆里面的具体地址)</li>
-</ul>
-</li>
-<li><p>方法区</p>
-<ul>
-<li>可以被所有的线程共享</li>
-<li>包含了所有的class和static变量 </li>
-</ul>
-</li>
-</ol>
-<pre><code>![](media/15858390904445/15859002101009.jpg)</code></pre><p>  <img src="media/15858390904445/15859002499756.jpg" alt=""></p>
-<p><img src="media/15858390904445/15859003013019.jpg" alt=""></p>
-<p><img src="media/15858390904445/15859003216560.jpg" alt=""></p>
-<p><img src="media/15858390904445/15859003544949.jpg" alt=""></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/04/12/%E6%B3%A8%E8%A7%A3%20Annotation-%E5%8F%8D%E5%B0%84%20Reflection/" data-id="ck8x3p6i90004zcv33kq5gjwr" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-Proxy pattern" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/04/12/Proxy%20pattern/" class="article-date">
-  <time datetime="2020-04-12T11:01:20.412Z" itemprop="datePublished">2020-04-12</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/12/Proxy%20pattern/">Proxy pattern</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Proxy-pattern"><a href="#Proxy-pattern" class="headerlink" title="Proxy pattern"></a>Proxy pattern</h1><h2 id="代理模式"><a href="#代理模式" class="headerlink" title="代理模式"></a>代理模式</h2><ul>
-<li>在某些情况下，一个客户不想活着不能直接饮用另一个对象，而代理对象可以在客户端和目标对象之间起到中介的作用。</li>
-<li>代理模式的作用是：为其他对象提供一种代理以控制对这个对象的访问。</li>
-</ul>
-<h2 id="代理模式一般涉及到的角色"><a href="#代理模式一般涉及到的角色" class="headerlink" title="代理模式一般涉及到的角色"></a>代理模式一般涉及到的角色</h2><ul>
-<li>抽象角色:声明对象和代理对象的共同接口</li>
-<li>代理角色：代表对象角色内部含有真是对象的引用，从而可以操作真实对象，同时代理对象提供与真实对象相同的接口以便在任何时刻都能够代替真是对象。同时代理对象可以在执行真实对象操作时，附加其他的操作，相当于对真实对象进行封装。</li>
-<li>真实角色:代理角色代表的真实对象，是我们最终引用的对象</li>
-</ul>
-<h2 id="静态代理的优缺点"><a href="#静态代理的优缺点" class="headerlink" title="静态代理的优缺点"></a>静态代理的优缺点</h2><ul>
-<li><p>优点</p>
-<ul>
-<li>业务类只需要关注业务逻辑本省，保证了业务类的重要性，这是代理的供有优点。</li>
-</ul>
-</li>
-<li><p>缺点</p>
-<ul>
-<li>代理对象的一个接口之服务于一种类型的对象，如果要代理的方法很多，势必要为每一种方法都进行代理，静态代理在程序规模稍大时就无法胜任了。代码维护量比较大</li>
-</ul>
-</li>
-</ul>
-<h2 id="动态代理"><a href="#动态代理" class="headerlink" title="动态代理"></a>动态代理</h2><p><strong>Java.lang.reflect.Proxy</strong><br>这是Java动态代理机制的主类，它提供了一组静态方法来为一组接口动态的生成代理类及其对象。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//该方法用于获取指定代理对象所关联的调用处理器</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span>   InvocationHandler <span class="title">getInvocationHandler</span><span class="params">(Object proxy)</span></span></span><br></pre></td></tr></table></figure>
-
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//该方法用于获取关联于指定类装载器和一组接口的动态代理的类对象</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> Class&lt;?&gt; getProxyClass(ClassLoader loader,  Class&lt;?&gt;... interfaces)</span><br></pre></td></tr></table></figure>
-
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//该方法用于判断指定的类是否是一个动态代理类</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">isProxyClass</span><span class="params">(Class&lt;?&gt; cl)</span></span></span><br></pre></td></tr></table></figure>
-
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//该方法用于为指定类装载器，一组接口调用生成动态代理类实例</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Object <span class="title">newProxyInstance</span><span class="params">(ClassLoader loader,Class&lt;?&gt;[] interfaces,InvocationHandler h)</span></span></span><br></pre></td></tr></table></figure>
-
-
-<p><strong>Java.lang.reflect.InvocationHandler</strong><br>这是调用处理器接口，它自定义了一个invoke方法，用于集中处理在动态代理类对象上的方法调用，通常在该方法中实现对委托类的代理访问</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//proxy - 调用该方法的代理实例</span></span><br><span class="line"><span class="comment">//method -所述方法对应于调用代理实例上的接口方法的实例。 方法对象的声明类将是该方法声明的接口，它可以是代理类继承该方法的代理接口的超级接口。</span></span><br><span class="line"><span class="comment">//args -包含的方法调用传递代理实例的参数值的对象的阵列，或null如果接口方法没有参数。 原始类型的参数包含在适当的原始包装器类的实例中，例如java.lang.Integer或java.lang.Boolean 。</span></span><br><span class="line">   </span><br><span class="line"><span class="function"><span class="keyword">public</span> Object <span class="title">invoke</span><span class="params">(Object proxy, Method method, Object[] args)</span></span></span><br></pre></td></tr></table></figure>
-
-<h2 id="动态代理特点"><a href="#动态代理特点" class="headerlink" title="动态代理特点"></a>动态代理特点</h2><p><img src="media/15861516107387/15861553978513.jpg" alt=""></p>
-<p><img src="media/15861516107387/15861554362264.jpg" alt=""></p>
-<h2 id="动态代理的优缺点"><a href="#动态代理的优缺点" class="headerlink" title="动态代理的优缺点"></a>动态代理的优缺点</h2><ul>
-<li>优点<ul>
-<li>动态代理与静态代理相比，最大的好处是接口中声明的所有的方法都被转移到调用处理器一个集中方法中处理(InvocationHandler.invoke)。这样，在接口方法数量比较多的时候，可以进行灵活处理，而不需要像静态代理那样每一个方法进行中转。高效！</li>
-</ul>
-</li>
-<li>缺点<ul>
-<li>Proxy已经设计得非常完美，但是还是有一点点的遗憾之处，那就是它始终无法摆脱仅interface代理的桎梏。</li>
-</ul>
-</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/04/12/Proxy%20pattern/" data-id="ck8x3p6hx0001zcv3dlceexrj" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/04/12/hello-world/" class="article-date">
-  <time datetime="2020-04-12T08:57:44.057Z" itemprop="datePublished">2020-04-12</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/12/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/04/12/hello-world/" data-id="ck8x3p6hy0002zcv333ol96kz" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-单列模式" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/03/22/%E5%8D%95%E5%88%97%E6%A8%A1%E5%BC%8F/" class="article-date">
-  <time datetime="2020-03-22T11:24:25.621Z" itemprop="datePublished">2020-03-22</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/22/%E5%8D%95%E5%88%97%E6%A8%A1%E5%BC%8F/">单列模式</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="单列模式"><a href="#单列模式" class="headerlink" title="单列模式"></a>单列模式</h1>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/03/22/%E5%8D%95%E5%88%97%E6%A8%A1%E5%BC%8F/" data-id="ck8x3p6hz0003zcv332epapf6" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
